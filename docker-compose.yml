@@ -1,0 +1,10 @@
+version: '2.2'
+services:
+  apache:
+    image: httpd:latest
+    container_name: dinogame-app
+    ports:
+    - '80:80'
+    volumes:
+    - ./src:/usr/local/apache2/htdocs
+    
